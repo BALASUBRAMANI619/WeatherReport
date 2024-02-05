@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     city = 'London'  # Replace with the desired city name
-    api_key = 'feaaaf970df86af3e97972e4c09330a2'  # Replace with your OpenWeatherMap API key
+    api_key = 'your_API_Key'  # Replace with your OpenWeatherMap API key
 
     # Make API request to OpenWeatherMap
     weather_url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
@@ -24,7 +24,7 @@ def index():
 @app.route('/json')
 def json():
     city = 'Mumbai'  # Replace with the desired city name
-    api_key = 'feaaaf970df86af3e97972e4c09330a2'  # Replace with your OpenWeatherMap API key
+    api_key = 'your_API_Key'  # Replace with your OpenWeatherMap API key
 
     # Make API request to OpenWeatherMap
     weather_url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
